@@ -1,0 +1,14 @@
+#include <iostream>
+
+int main (void)
+{
+  int  x = 0;
+  int result= x*1.609
+  std::cout << "Inserte las millas :" " \n" ;
+  std::cin >> x;
+  std::cout  <<  " Kilometros: " << result <<  "\n" ;
+
+
+  
+  return 0;
+}

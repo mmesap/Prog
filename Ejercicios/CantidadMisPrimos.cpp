@@ -35,7 +35,7 @@ void print (int x, int y)
   for (int i=x; i<=y; i+=1)
   {
     if(prime(i)) cant++; //Acumula.
-    std::cout << i << "\t\t" << prime (i) << "\t\t" <<  cant
+    std::cout << i << "\t\t\t\t" << prime (i) << "\t\t\t\t" <<  cant
     <<  "\n";
   }
 }

@@ -1,6 +1,6 @@
-# include <iostream>
-# include <vector>
-# include <cmath>
+#include <iostream>
+#include <vector>
+#include <cmath>
 bool is_orthogonal(const std::vector<double> & M, const double eps);
 int main(void)
 {

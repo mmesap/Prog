@@ -1,34 +1,40 @@
 #include <iostream>
 
-int fibonacci_loop (int N);
-int fibonacci_recursive (int N);
-  
+void fibonacci_loop (int N);
 
 int main (void)
 {
-  std::cout <<fibonacci_loop(N) << std:: endl;
-  std::cout <<fibonacci_recursive(N) << std:: endl;
+  int N;
+  std::cout <<"Escriba el número de dígitos"<< std:: endl;
+  std::cin >> N;
+  fibonacci_loop (N);
+
   return 0;
 }
 
+void fibonacci_loop (int N){
+  if (N==1){
+    std::cout << "1";
+  }else{
+    if(N==2){
+      std::cout << "1, 1,";
+    }else{
+      int n1 = 1;
+      int n2 = 1;
+      int n;
+      int x=0;
+      std::cout << "1, 1,";
+      while (x<N){
 
-
-int fibonacci_loop (int N)
-{
-  int suma = 0;
-  if ((N==0 or (N==1))
-    {
-      return 1;
-    }
-    int aold1=1;
-    int aold2=1;
-    int a;
-    for (int ii = 2; ii <= N; ++ii)
-      {
-	a= aold1 + aold2;
-	suma +=a;
-	aold2 = aold1;
-	aold1 = a;
+        n = n1 + n2;
+        std::cout << n <<" ,";
+        n1 = n2;
+        n2 = n;
+        x++;
       }
+    }
+  }
+  
+}
     
     
